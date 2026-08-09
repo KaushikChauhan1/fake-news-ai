@@ -531,7 +531,7 @@ async function runAnalysis(isRetry = false) {
 
     const BACKEND_URL = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
       ? 'http://127.0.0.1:10000'
-      : 'https://fake-news-ai-6adu.onrender.com';
+      : 'https://fake-news-ai-1-pl5w.onrender.com';
     
     const data = await fetchWithTimeout(`${BACKEND_URL}/analyze`, { method: 'POST', body: fd }, 60000);
     
